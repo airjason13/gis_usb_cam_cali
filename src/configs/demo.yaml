@@ -1,0 +1,9 @@
+data:
+    image_src: '/usb_cam/image_raw'
+    img_rows: 360
+    img_cols: 640
+    publish_rate: 30
+detect:
+    score_threshold: 0.3
+    top_k: 100
+    

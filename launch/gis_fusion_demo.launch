@@ -1,0 +1,9 @@
+<launch>
+  <arg name="det_rate" default="30"/>
+  <arg name="image_src" default="/image_raw"/>
+  
+  <node pkg="gis_usb_cam_cali" name="gis_usb_cam_cali" type="gis_usb_cam_cali.py" output="screen">
+    <param name="image_src" type="str" value="$(arg image_src)"/>
+    <param name="det_rate" type="double" value="$(arg det_rate)"/>
+  </node>
+</launch>
